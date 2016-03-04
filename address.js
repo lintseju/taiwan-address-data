@@ -347,7 +347,7 @@ var get_csv = function(url, callback){
         var text = this.responseText.replace(/\s+$/m, '');
         callback(text.split("\n").map(function(line) { return line.split(","); }));
     };
-    oReq.open("get", "//sheethub-tgos-address.s3-ap-northeast-1.amazonaws.com/" + url, true);
+    oReq.open("get", "//d2ci2jdb74ok9m.cloudfront.net/" + url, true);
     oReq.send();
 };
 
